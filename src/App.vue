@@ -4,15 +4,13 @@
   import AppFooter from './components/AppFooter.vue';
 
   export default {
-    AppHeader,
-    AppMain,
-    AppFooter,
-    components: { AppHeader, AppFooter }
+   
+    components: { AppHeader, AppMain, AppFooter }
 };
 </script>
 
 <template>
-  <div>
+  <div class="container_chess">
     <AppHeader />
     <AppMain />
     <appFooter />
@@ -24,4 +22,13 @@
 
 <style lang="scss" scoped>
   @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+  .container_chess{
+    
+    max-width: 1800px;
+    height: 100vh;
+    margin:auto;
+    background-color: aqua;
+  }
 </style>
