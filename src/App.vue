@@ -28,6 +28,5 @@
     max-width: 1800px;
     height: 100vh;
     margin:auto;
-    background-color: aqua;
   }
 </style>
