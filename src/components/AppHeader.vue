@@ -78,12 +78,36 @@ data() {
         
         <section class="section_title">
             <div class="d-flex flex-column" style="width:60%; color:white;">
-                <p>welcome</p>
-                <h1 style="font-size: 60px; font-weight: 700;">ACADEMIC CHESS FOR <span style="color:#FFCD18; font-style: oblique;">EVERYONE</span> </h1>
-                <p class="" style=" width:78%; font-size: 18px;">We are dedicated to broadening and developing chess as art, recreation, and as a significat element of culture in Northern California.</p>
+                
                 <div>
-                    <button> Enroll Now</button>
-                    <button>Learn More</button>
+                    <button class="first_button_nav d-flex align-items-center rounded-3" 
+                    style="font-size: 9px; background-color: #FFCD18; font-weight: 700; border:0;">
+                        WELCOME
+                    </button>
+                </div>
+                <h1 
+                class="mb-3"
+                style="font-size: 60px; font-weight: 700;">
+                    ACADEMIC CHESS FOR 
+                    <span 
+                    style="color:#FFCD18; font-style: oblique;">
+                        EVERYONE
+                    </span> 
+                </h1>
+                <p class="" style=" width:70%; font-size: 16px; font-weight: 500;">We are dedicated to broadening and developing chess as art, recreation, and as a significat element of culture in Northern California.</p>
+                
+                <div class="mt-2">
+                    <button 
+                    class=" button_nav py-2 rounded-1 me-3 border-0" 
+                    style="color:black; font-weight: 600; background-color: #FFCD18;">
+                        Enroll Now
+                    </button>
+
+                    <button 
+                    class=" button_nav py-2 rounded-1" 
+                    style="border: 1px solid white; background-color: transparent; color:white; font-weight: 600;">
+                        Learn More
+                    </button>
                 </div>
                 
             </div>
@@ -107,7 +131,7 @@ data() {
         background-image: url(./../assets/chess/images/mt-2236-home-bg1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 85%;
+        height: 45rem;
     }
     
     .section_nav{
@@ -141,6 +165,14 @@ data() {
         height: 84%;
         width: 60%;
         margin: auto;
+        padding-top: 5.5rem;
+    }
+
+    .first_button_nav{
+        padding-inline: 0.7rem;
+    }
+    .button_nav{
+        padding-inline: 2.4rem;
     }
 
 

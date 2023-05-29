@@ -5,7 +5,7 @@
 
   export default {
    
-    components: { AppHeader, AppMain, AppFooter }
+    components: { AppHeader, AppMain, AppFooter,}
 };
 </script>
 
@@ -26,7 +26,7 @@
 
   .container_chess{
     max-width: 1800px;
-    height: 100vh;
+    height: 100%;
     margin:auto;
   }
 </style>
