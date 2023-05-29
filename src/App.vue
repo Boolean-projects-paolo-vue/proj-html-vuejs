@@ -20,12 +20,11 @@
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import "../node_modules/bootstrap/scss/bootstrap";
 
 
   .container_chess{
-    
     max-width: 1800px;
     height: 100vh;
     margin:auto;
