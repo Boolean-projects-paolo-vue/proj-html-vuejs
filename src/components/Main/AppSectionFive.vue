@@ -14,7 +14,8 @@ export default {
             <div class="row">
                 <div class="col-3 offset-1">
                     <div class="sub_col">
-                        <img src="./../../assets/chess/images/mt-2236-home-img4.jpg" alt="" class="img-fluid">
+                        <img src="./../../assets/chess/images/mt-2236-home-img4.jpg" alt="" class="img-fluid ms-2"
+                        style="width: 300px;">
                     </div>
                 </div>
                 <div class="col-4">
@@ -43,7 +44,8 @@ export default {
                 <div class="row">
                     <div class="col-3 offset-1">
                         <div class="sub_col">
-                            <img src="./../../assets/chess/images/mt-2236-home-img5.jpg" alt="" class="img-fluid">
+                            <img src="./../../assets/chess/images/mt-2236-home-img5.jpg" alt="" class="img-fluid"
+                            style="width: 300px;">
                         </div>
                     </div>
                     <div class="col-4">

@@ -15,4 +15,9 @@ export default {
     .list_component{
         padding-inline: 0.6rem;
     }
+
+    .list_component:hover{
+        color: #FFCD18;
+        cursor: pointer;
+    }
 </style>

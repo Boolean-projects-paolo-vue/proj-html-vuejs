@@ -77,7 +77,10 @@ data() {
         </section>
         
         <section class="section_title">
-            <div class="d-flex flex-column" style="width:60%; color:white;">
+            <button class="button_telephone py-3 text-center" style="background-color: white; width: 4%; border:0">
+                    <i class="fa-solid fa-phone p-1" style="font-size: 32px;"></i>
+            </button>
+            <div class="container_title d-flex flex-column" style="width:60%; color:white;">
                 
                 <div>
                     <button class="first_button_nav d-flex align-items-center rounded-3" 
@@ -94,12 +97,13 @@ data() {
                         EVERYONE
                     </span> 
                 </h1>
+
                 <p class="" style=" width:70%; font-size: 16px; font-weight: 500;">We are dedicated to broadening and developing chess as art, recreation, and as a significat element of culture in Northern California.</p>
                 
                 <div class="mt-2">
                     <button 
                     class=" button_nav py-2 rounded-1 me-3 border-0" 
-                    style="color:black; font-weight: 600; background-color: ">
+                    style="color:black; font-weight: 600; background-color: #FFCD18 ">
                         Enroll Now
                     </button>
 
@@ -168,12 +172,30 @@ data() {
         padding-top: 5.5rem;
     }
 
+    .button_telephone{
+        border-radius: 100%;
+        position:absolute;
+        left: 0.5rem;
+        top: 23.5rem;
+    }
+
+    .container_title{
+        position: relative;
+    }
+
+    
+
     .first_button_nav{
         padding-inline: 0.7rem;
     }
+
     .button_nav{
         padding-inline: 2.4rem;
     }
 
+
+    .button_telephone:hover{
+        scale: 0.9;
+    }
 
 </style>
