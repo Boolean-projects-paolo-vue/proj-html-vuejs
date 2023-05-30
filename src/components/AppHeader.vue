@@ -99,7 +99,7 @@ data() {
                 <div class="mt-2">
                     <button 
                     class=" button_nav py-2 rounded-1 me-3 border-0" 
-                    style="color:black; font-weight: 600; background-color: #FFCD18;">
+                    style="color:black; font-weight: 600; background-color: ">
                         Enroll Now
                     </button>
 

@@ -78,7 +78,7 @@ export default {
 
     .container{
         padding-top: 3rem;
-        
+        padding-bottom: 3rem; 
     }
 
     .section_five{
