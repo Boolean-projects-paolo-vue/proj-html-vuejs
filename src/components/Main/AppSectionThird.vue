@@ -10,7 +10,7 @@ export default {
             <h2 style="font-weight: 700;">Courses</h2>
             <h5 style="color: grey; font-size: 22px ;">To keep up with the constantly rising standards of play</h5>
         </div>
-        <div class="d-flex flex-row pt-4" style="width: 60%; margin: auto;">
+        <div class="d-flex flex-row pt-4" style="width: 63%; margin: auto;">
             <div class="col-4">
                 
                 <div class=" card text-center mx-3 border-0">
@@ -88,5 +88,8 @@ export default {
         -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
         box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
+    }
+    .card:hover{
+        scale: 1.8;
     }
 </style>

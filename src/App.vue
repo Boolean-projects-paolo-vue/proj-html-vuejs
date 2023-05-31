@@ -25,7 +25,7 @@
 
 
   .container_chess{
-    max-width: 1800px;
+    width: 100%;
     height: 100%;
     margin:auto;
   }

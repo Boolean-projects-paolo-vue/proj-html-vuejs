@@ -46,7 +46,7 @@ export default {
     }
 
     .sub_section{
-        width: 65%;
+        width: 63%;
         padding-right: 4rem;
         padding-left: 0.5rem;
         margin: auto;

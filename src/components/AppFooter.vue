@@ -8,7 +8,7 @@ export default {
 <section class="section_footer">
     <div class="container d-flex justify-content-between" style="color: white">
         <div class="footer left d-flex flex-column justify-content-between">
-            <div style="width: 70%">
+            <div style="width: 80%">
                 <img src="./../assets/chess/images/mt-2236-home-logo.png" alt="" class="img-fluid">
             </div>
             <div>
@@ -60,8 +60,9 @@ export default {
         background-color: rgb(28, 28, 28);
     }
     .container{
-        width: 58%;
+        width: 58.5%;
         height: 18rem;
+        margin-left: 23rem ;
         
     }
 

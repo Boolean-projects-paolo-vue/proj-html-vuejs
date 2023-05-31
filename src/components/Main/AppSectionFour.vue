@@ -12,7 +12,7 @@ export default {
                 <h1 style="font-weight: 600; color: white;">TAKE THE <span style="color:#FFCD18">FIRST STEP</span></h1>
                 <h6 style="color:white">The fascinating world of chess has its doors open anyone</h6>
             </div>
-            <div class="mb-4 me-1">
+            <div class="me-4">
                 <button 
                 class=" button_nav chess py-2 rounded-1 border-0 mt-2" 
                 style="color:black; font-weight: 600; background-color: #FFCD18;">
@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 
     .button_nav{
-        padding-inline: 2rem;
+        padding-inline: 2.5rem;
     }
 
     .section_four{
