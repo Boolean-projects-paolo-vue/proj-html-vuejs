@@ -90,6 +90,6 @@ export default {
         box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
     }
     .card:hover{
-        scale: 1.8;
+        scale: 1.1;
     }
 </style>
