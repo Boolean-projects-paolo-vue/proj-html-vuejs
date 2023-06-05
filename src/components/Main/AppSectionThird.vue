@@ -88,8 +88,10 @@ export default {
         -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
         box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.75);
+        transition: transform 0.2s;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
-    .card:hover{
-        scale: 1.1;
-    }
+    
 </style>

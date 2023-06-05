@@ -30,7 +30,6 @@ export default {
     <AppSectionFour />
     <AppSectionFive />
     <AppSectionSix />
-
 </template>
 
 

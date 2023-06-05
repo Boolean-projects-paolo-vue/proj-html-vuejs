@@ -27,7 +27,7 @@ export default {
         width: 49%;
         padding-top: 0.7rem;
         padding-left: 1.2rem;
-        padding-right: 4.5rem;
+        padding-right: 4.5rem; 
     }
 
     .p_main{

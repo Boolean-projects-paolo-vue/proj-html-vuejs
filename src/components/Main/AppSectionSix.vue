@@ -45,7 +45,6 @@ export default {
         padding-top: 5rem;
         padding-bottom: 6rem;  
         margin-left: 19rem;
-        
     }
 
     

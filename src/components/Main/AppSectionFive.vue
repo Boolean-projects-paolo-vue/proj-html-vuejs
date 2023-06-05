@@ -87,7 +87,11 @@ export default {
     .container{
         margin: auto;
         padding-left:6rem;
-        padding-top: 3rem; 
+        padding-top: 3rem;       
+        transition: transform 0.2s;
+        &:hover{
+            transform: scale(1.1);
+        } 
     }
 
     

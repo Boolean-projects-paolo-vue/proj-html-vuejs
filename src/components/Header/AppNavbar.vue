@@ -12,6 +12,10 @@ export default {
 
 
 <style lang="scss">
+    .sub_navbar{
+        width: 100%;
+    }
+
     .list_component{
         padding-inline: 0.6rem;
     }

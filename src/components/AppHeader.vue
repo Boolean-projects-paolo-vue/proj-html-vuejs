@@ -1,13 +1,24 @@
 <script>
 import AppNavbar from './Header/AppNavbar.vue';
+import AppNavbarContact from './Header/AppNavbarContact.vue';
 
 export default {
 components:{
     AppNavbar,
+    AppNavbarContact,
 },
 data() {
         return {
+            FirstArrayHarder: [
+                {
+                    write:'6767 Santa Monica Blvd, Los Angeles, CA 90038',
+                },
+                {
+                    write:'Call Now 123-456-7890',
+                }
+            ],
             ArrayHarder: [
+                
                 {
                     title: 'Home',
                 },
@@ -30,6 +41,7 @@ data() {
                     title: 'Contact Us',
                 },
             ],
+
         };
     },
 }
@@ -38,39 +50,35 @@ data() {
 <template>
     <section class="section_header">
         <div class="container_header">
-            <section class="section_nav d-flex align-item-between pt-2">
-                <div class="navbar d-flex flex-column align-items-center" style="color:white; font-weight: 400;">
-                    <div class="sub_navbar_info d-flex justify-content-between align-items-center">
-                        <div class="d-flex justify-content-between" style="width:75%; font-size: 13px;">
-                            <span>
-                                <i class="fa-solid fa-location-dot p-1"
-                                style="font-size: 11px;">
-                                </i>
-                                6767 Santa Monica Blvd, Los Angeles; CA 90038
-                            </span>
-                            <div>
-                                <i class="fa-solid fa-phone p-1" 
-                                style="font-size: 10px; ">
-                            </i>
-                                Call Now 123-456-7890
-                            </div>
+            <section class="section_nav">
+                <div class="d-flex flex-column" style="height: 100%">
+                    <div class="first_navbar d-flex flex-row align-items-center" >
+                        <i class="fa-solid fa-location-dot px-1"></i>
+                        <i class="fa-solid fa-phone icon_telephone"></i>
+                        <div class="d-flex flex-row justify-content-between align-items-center" style="width: 72%;">
+                            <AppNavbarContact
+                            v-for="element in FirstArrayHarder" 
+                            :key="element.write"
+                            :write="element.write"
+                            />
                         </div>
-
-                    
-                        <div class="d-flex justify-content-end" style="width: 30%; font-size: 15px;">
-                            <button class="px-5 py-2 rounded-3 " style="font-weight: 700; background-color: white; border:0;">Donate</button>
-                        </div> 
+                        
+                        
+                        <div class=" div_button d-flex justify-content-end" style="font-size: 15px;">
+                            <button class="button_nav px-5 py-2 rounded-3" style="font-weight: 700; background-color: white; border:0;">Donate</button>
+                        </div>  
                     </div>
-
-                    <div class="sub_navbar d-flex flex-row justify-content-between pb-2">
-                        <img src="./../assets/chess/images/mt-2236-home-logo.png" alt="" class="logo" style="height: 100%;">
-                        <div class=" list d-flex flex-row justify-content-center align-items-center">
-                        <AppNavbar 
-                                v-for="index in ArrayHarder" 
-                                :key="index.title"
-                                :title="index.title"
-                                style="font-size: 14px;"
-                        /> 
+                    
+                    <div class="navbar d-flex justify-content-between align-items-center" style="color:white; font-weight: 400;"> 
+                        <div style="height: 55%;"><img src="./../assets/chess/images/mt-2236-home-logo.png" alt="" class="logo img-fluid" style="height: 100%;"></div>   
+                        
+                        <div class="d-flex flex-row">
+                            <AppNavbar 
+                            v-for="index in ArrayHarder" 
+                            :key="index.title"
+                            :title="index.title"
+                            style="font-size: 14px;"
+                            /> 
                         </div>
                     </div>
                 </div>
@@ -91,7 +99,7 @@ data() {
                     <h1 
                     class="mb-3"
                     style="font-size: 60px; font-weight: 700;">
-                        ACADEMIC CHESS FOR 
+                            ACADEMIC CHESS FOR 
                         <span 
                         style="color:#FFCD18; font-style: oblique;">
                             EVERYONE
@@ -117,7 +125,27 @@ data() {
             </section>   
         </div>   
     </section>    
-    
+    <!-- <div class="sub_navbar_info d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between" style="width:75%; font-size: 13px;">
+                            <span>
+                                <i class="fa-solid fa-location-dot p-1"
+                                style="font-size: 11px;">
+                                </i>
+                                6767 Santa Monica Blvd, Los Angeles; CA 90038
+                            </span>
+                            <div>
+                                <i class="fa-solid fa-phone p-1" 
+                                style="font-size: 10px; ">
+                                </i>
+                                Call Now 123-456-7890
+                            </div>
+                        </div>
+
+                    
+                        <div class="d-flex justify-content-end" style="width: 30%; font-size: 15px;">
+                            <button class="button_nav px-5 py-2 rounded-3 " style="font-weight: 700; background-color: white; border:0;">Donate</button>
+                        </div> 
+                    </div> -->
     
 
 </template>
@@ -125,9 +153,13 @@ data() {
 
 <style lang="scss">
     
-    i{ 
+    .fa-phone{ 
     color:#FFCD18;
     };
+
+    .fa-location-dot{
+      color: #FFCD18;  
+    }
 
     .section_header{
         background-image: url(./../assets/chess/images/mt-2236-home-bg1.jpg);
@@ -140,27 +172,33 @@ data() {
     .section_nav{
         background-color: rgba(1, 2, 14, 0.338);
         height: 7rem;
+        color: white;
     }
+
+
+
+    .first_navbar{
+        width: 61%;
+        height: 50%;
+        margin: auto;
+        position: relative;
+    }
+
+    .div_button{
+        padding-left:9.2rem
+    }
+    
+    .button_nav{
+        padding-inline: 2rem;
+    }
+
 
     .navbar{
         width: 61%;
-        height: 100%;
+        height: 50%;
         margin: auto;   
     }
 
-    .sub_navbar_info{
-        width: 100%;
-        
-    }
-
-    .sub_navbar{
-        width: 100%;
-    }
-
-
-    .list{
-        height: 100%;
-    }
 
 
 
@@ -176,6 +214,10 @@ data() {
         position:absolute;
         left: 0.5rem;
         top: 26rem;
+        transition: transform 0.2s;
+        &:hover{
+            transform: scale(0.9);
+        }
     }
 
     .container_title{
@@ -184,6 +226,10 @@ data() {
     }
 
     
+    .icon_telephone{
+        position: absolute;
+        left: 43rem;
+    }
 
     .first_button_nav{
         padding-inline: 0.7rem;
@@ -191,11 +237,10 @@ data() {
 
     .button_nav{
         padding-inline: 2.4rem;
-    }
-
-
-    .button_telephone:hover{
-        scale: 0.9;
+        transition: transform 0.2s;
+        &:hover{
+            transform: scale(0.95);
+        }
     }
 
 </style>
