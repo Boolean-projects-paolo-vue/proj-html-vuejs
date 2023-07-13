@@ -17,4 +17,10 @@ export default {
     .write{ 
         font-size: 14px;
     }
+
+    @media screen and (min-width: 1200px){
+        .write{ 
+        font-size: 12px;
+    }
+    }
 </style>

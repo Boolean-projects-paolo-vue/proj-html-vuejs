@@ -24,4 +24,8 @@ export default {
         color: #FFCD18;
         cursor: pointer;
     }
+
+    @media screen and (min-width: 1200px){
+    
+    }
 </style>

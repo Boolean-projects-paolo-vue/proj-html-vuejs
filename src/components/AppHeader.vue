@@ -86,7 +86,7 @@ data() {
         
             <section class="section_title">
                 <button class="button_telephone py-3 text-center" style="background-color: white; width: 4%; border:0">
-                        <i class="fa-solid fa-phone p-1" style="font-size: 32px;"></i>
+                        <i class=" icon_button_telephone fa-solid fa-phone p-1"></i>
                 </button>
                 <div class="container_title d-flex flex-column" style="width:60%; color:white;">
                 
@@ -193,12 +193,12 @@ data() {
     }
 
 
+
     .navbar{
         width: 61%;
         height: 50%;
         margin: auto;   
     }
-
 
 
 
@@ -220,6 +220,13 @@ data() {
         }
     }
 
+    .icon_button_telephone{
+        font-size: 32px;
+        @media screen and (max-width: 1200px){
+            font-size:15px;
+        }
+    }
+
     .container_title{
         position: relative;
         padding-right:2rem;
@@ -228,7 +235,7 @@ data() {
     
     .icon_telephone{
         position: absolute;
-        left: 43rem;
+        left: 50rem;
     }
 
     .first_button_nav{
@@ -242,5 +249,8 @@ data() {
             transform: scale(0.95);
         }
     }
+
+
+   
 
 </style>
